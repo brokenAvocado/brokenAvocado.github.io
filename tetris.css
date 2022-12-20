@@ -1,0 +1,36 @@
+.title {
+    font-size: .8em;
+}
+
+canvas {
+    border: 2px solid grey;
+}
+
+table {
+    justify-content: center;
+    margin: auto;
+}
+
+tr {
+    display: flex;
+    margin: .1em ;
+    align-items: center;
+    border: 2px solid grey;
+}
+
+td {
+    margin: .5em;
+}
+
+body {
+    /* The next two lines are not novel, they are from w3schools
+    citation: https://www.w3schools.com/howto/howto_css_center_website.asp */
+    max-width: 300px;
+    margin: auto;
+    margin-top: 2em;
+    background-color: black;
+    font-family: "alfa Slab One", arial, sans-serif; 
+    color: white;
+    justify-content: center;
+    justify-items: center;
+}

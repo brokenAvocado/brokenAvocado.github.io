@@ -1,0 +1,35 @@
+<html>
+    <head> 
+        <meta charset="utf-8" /> 
+        <title>Tetris</title>
+        <link rel = "stylesheet" href = "tetris.css">
+
+        <!-- Linking the custom font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    </head>
+    <body onload = "foreground1.engine()">
+        <table>
+            <!-- row for the title and stopwatch -->
+            <tr> 
+                <td class = "title">
+                    <h1>Tetris Reloaded</h1>
+                </td>
+                <td class = "stopwatch"><p>Time elapsed:</p>
+                    <div id = "time">0:00</div>
+                </td>
+                <td class = "score"><p>Score:</p>
+                    <div id = "score">0</div>
+                </td>
+            </tr>
+        </table>
+        <!-- table to hold all necessary info and functions -->
+        <!-- Stacking canvases together was not an original idea, and it was the idea from Borin Smus who posted an article on 
+        https://www.html5rocks.com/en/tutorials/canvas/performance/ about the particular attribute, aka style = "position...." in canvas tags -->
+        <canvas id = "bg" width = "300" height = "500" style = "position: absolute; z-index: 2;"></canvas>
+        <canvas id = "fg1" width = "300" height = "500" style = "position: absolute; z-index: 1;"></canvas>
+        <canvas id = "fg2" width = "300" height = "500" style = "position: absolute; z-index: 3;"></canvas>
+        <script src = "tetris.js"></script>   
+    </body>
+</html>
