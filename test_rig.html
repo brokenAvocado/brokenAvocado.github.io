@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Torque Testing Rig</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Eric Kim</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutMe.html">About Me</a></li>
+								<li><a href="umdloop.html">UMD Loop</a></li>
+								<li><a href="core.html">CORE Lab</a></li>
+								<li><a href="projects.html">Technical Projects</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Torque Testing Rig</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<!-- Slideshow container -->
+									<div class="slideshow-container">
+
+										<!-- Full-width images with number and caption text -->
+										<div class="mySlides fade">
+											<img src="images/testRig_cad.jpg" style="width:100%">
+											<div class="text">Testing Rig CAD</div>
+										</div>
+
+										<div class="mySlides fade">
+											<img src="images/testRig2.jpg" style="width:100%">
+											<div class="text"><span style = "background-color: white; padding: 5px;">Deflated PAM Within Test Rig</span></div>
+										</div>
+
+										<div class="mySlides fade">
+											<img src="images/testRig1.jpg" style="width:100%">
+											<div class="text"><span style = "background-color: white; padding: 5px;">Inflated PAM Within Test Rig</span></div>
+										</div>
+
+										<!-- Next and previous buttons -->
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+
+									<!-- The dots/circles -->
+									<div style="text-align:center">
+										<span class="dot" onclick="currentSlide(1)"></span>
+										<span class="dot" onclick="currentSlide(2)"></span>
+										<span class="dot" onclick="currentSlide(3)"></span>
+									</div>
+									<h3 class="major">Prior Research and Literature Review</h3>
+									<p>
+										To get to the point of designing a testing rig, I needed to prove my design decisions. Using literature, I calculated the expected torque 
+										a burrowing robot would experience in excavating material ranging from sandy to icy. I also ensured the components on this test rig would not break 
+										with stress calculations at key components and stress concentrations.
+									</p>
+									<h3 class="major">Functional Analysis</h3>
+									<p>
+										Pneumatic Artificial Muscles (PAMs) have stiffness against torsion, which is related to how much it is pressurized. At multiple pressures, 
+										I was able to extrapolate the maximum torque the muscle could react with a torisonal testing rig.
+									</p>
+									<p>
+										The torsional rig parts were designed and analyzed to deliver a maximum amount of torque equivalent to what the robot would experience
+										while digging in sandy or icy environments. Additionally, I needed to interface with an array of sensors for data collection, and I 
+										controlled the experiment with a large stepper motor. An arduino integrated all the electronics to a custom interface, which I had 
+										programmed from scratch. All this was needed because the sensor suite was unique 
+									</p>
+								</div>
+							</div>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slideshow.js"></script>
+	</body>
+</html>

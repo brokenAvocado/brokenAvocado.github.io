@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Screw Conveyor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Eric Kim</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutMe.html">About Me</a></li>
+								<li><a href="umdloop.html">UMD Loop</a></li>
+								<li><a href="core.html">CORE Lab</a></li>
+								<li><a href="projects.html">Technical Projects</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Custom Screw Conveyor</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<!-- Slideshow container -->
+									<div class="slideshow-container">
+
+										<!-- Full-width images with number and caption text -->
+										<div class="mySlides fade">
+											<img src="images/excavAssem.png" style="width:100%">
+											<div class="text">Excavation assembly (transparent except for auger)</div>
+										</div>
+
+										<div class="mySlides fade">
+											<img src="images/augerFull.png" style="width:100%">
+											<div class="text">Full auger assembly</div>
+										</div>
+
+										<div class="mySlides fade">
+											<img src="images/augerHalf.png" style="width:100%">
+											<div class="text">Internal component view</div>
+										</div>
+
+										<!-- Next and previous buttons -->
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+
+									<!-- The dots/circles -->
+									<div style="text-align:center">
+										<span class="dot" onclick="currentSlide(1)"></span>
+										<span class="dot" onclick="currentSlide(2)"></span>
+										<span class="dot" onclick="currentSlide(3)"></span>
+									</div>
+									<h3 class="major">Screw Conveyor Purpose</h3>
+									<p>
+										Also known as an auger, this was the primary method of transporting soil from the front of the tunnel boring machine to the rear. 
+										This is to make way for more soil
+										that will get excavated and have a continuous cycle of excavating and storing dirt. Because our soil has no treatment or water
+										added, it will be very coarse and abrasive rock (based on the Las Vegas soil conditions).
+									</p>
+									<h3 class="major">Design Process</h3>
+									<p>
+										General dimensions of this auger were chosen from literature. The auger uses an archimedes screw with specific inner
+										and outer diameters for the rock sizes and shapes we would be encountering. There were a lot of spacing and sizing issues with the 
+										auger because it had to pass through many subsystems. Namely, the hydraulic fittings and motors and the steering joints 
+										were all regularly changing and intefering during the design process. It require conveying the correct 
+										auger length and angle to these responsible engineers.
+									</p>
+									<h3 class="major">Analysis</h3>
+									<div class="col-12"><span class="image fit"><img src="images/augerFEA.png" alt="" /></span></div>
+									<p>
+										Deflection on the auger bit itself was done to ensure it would not interfere with the casing. Additionally, the flights of the 
+										screw portion were looked at for shear failure and bending stress.
+									</p>
+									<h3 class="major">Manufacturing</h3>
+									<embed src="documents/auger.pdf" type="application/pdf" width="100%" height="600px" />
+									<p>
+										Welding and machining the steel components were done out of house, with drawings that had tolerances and instructions that were
+										important to the functionality of the auger. The hardest weld to describe to manufacturers was the elliptical weld for the plate 
+										that this whole assembly was mounted to. With a circular casing at an angle, the plate interfaced with the casing at an angle (because
+										the plate is supposed to be flush with the mounting wall).  
+									</p>
+									<p>
+										Tolerances on hole position were used the most. The screw portion of the 
+										auger needed to be centered so it would not interfere with its circular housing, so a tolerance on the bearing location was 
+										used. Additionally, radial patterns of fasteners shared tolerances so that, by the end, all fasteners could be mounted without 
+										causing interference on their respective parts.
+									</p>
+								</div>
+							</div>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slideshow.js"></script>
+	</body>
+</html>
